@@ -1,0 +1,16 @@
+form{
+    background-image: url('https://img.freepik.com/premium-photo/photo-evening-nature-landscape-with-river-lake-view-beautiful-trees_763111-93021.jpg?w=996');
+    background-size: cover;
+    
+
+}
+form input{
+    border-radius: 5%;
+    margin-left: 5px;
+}
+form input:focus{
+    border-color: red
+}
+label{
+    padding: 10px;
+}
