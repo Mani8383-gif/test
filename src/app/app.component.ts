@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { log } from 'console';
 import { loginservice } from './app.service';
-import { loginuser } from './app.model';
+import { loginuser, test } from './app.model';
 import { HttpClient } from '@angular/common/http';
 import { json } from 'stream/consumers';
 
@@ -24,7 +24,8 @@ constructor(private fb:FormBuilder){
   ,password:['',[Validators.required, Validators.maxLength(12)]]
 
 })
-  
+  type product =Partial< Omit<test,'id'>>
+ type pickproduct=Pick<test,'price'|'title'>
 }
 
 
